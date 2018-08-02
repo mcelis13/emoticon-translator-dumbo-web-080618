@@ -4,7 +4,7 @@ require 'pry'
 
 def load_library(filePath)
   new_hash = {}
-  YAML.dump(filePath)
+  YAML.load_file(filePath)
   binding.pry
   new_hash
 end
