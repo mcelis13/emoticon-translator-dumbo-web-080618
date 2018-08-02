@@ -3,8 +3,12 @@ require 'pry'
 
 def load_library(filePath)
   new_hash = {}
-  yamlFile = YAML.load_file(filePath)
-  binding.pry
+  yaml_file = YAML.load_file(filePath)
+
+  yaml_file.each do |key, symbols|
+    binding.pry
+  end#end of yaml_file.each
+
   new_hash
 end
 
