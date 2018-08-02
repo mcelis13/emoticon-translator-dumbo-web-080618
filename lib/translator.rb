@@ -10,7 +10,7 @@ def load_library(filePath)
         if new_hash['get_emoticon'].has_value?(english_emoticon) == false
           new_hash['get_meaning'] = {emoticons[1] => key}
           new_hash['get_emoticon'] = {emoticons[0] => emoticons[1]}
-        end# end of new_hash
+        end# end of if new_hash
       end#end of emoticons.each
   end#end of yaml_file
 
