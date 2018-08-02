@@ -1,6 +1,6 @@
 require 'yalm'
 YAML.load('emoticons.yml')
-require 'emoticons.yml'
+require 'pry'
 
 def load_library(filePath)
   new_hash = {}
