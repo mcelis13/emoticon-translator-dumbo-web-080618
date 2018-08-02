@@ -1,4 +1,4 @@
-require 'yalm'
+require 'yaml'
 YAML.load_file('/lib/emoticons.yml')
 require 'pry'
 
