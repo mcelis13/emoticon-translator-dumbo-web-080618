@@ -11,6 +11,7 @@ def load_library(filePath)
   end
 
   new_hash
+  binding.pry
 end
 
 def get_japanese_emoticon
