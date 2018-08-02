@@ -28,6 +28,6 @@ def get_japanese_emoticon(filePath, english_emoticon)
 
 end#end of function
 
-def get_english_meaning(filePath, )
+def get_english_meaning(filePath, japanese_emoticon)
   emoticons_hash = load_library(filePath)
 end
