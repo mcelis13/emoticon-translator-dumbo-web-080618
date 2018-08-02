@@ -9,6 +9,7 @@ def load_library(filePath)
     if new_hash.has_key?(key) == false
       new_hash['get_meaning'] = {emoticons[1] => key}
       new_hash['get_emoticon'] = {emoticons[0] => emoticons[1]}
+      binding.pry
     end
   end
 
