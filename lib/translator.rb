@@ -21,11 +21,11 @@ def get_japanese_emoticon(filePath, english_emoticon)
   emoticons_hash = load_library(filePath)
 
   if emoticons_hash['get_emoticon'][english_emoticon]
-    return emoticons_hash['get_emoticon'][japanese_emoticon]
+    return emoticons_hash['get_emoticon'][english_emoticon]
   else
     return 'Sorry, that emoticon was not found'
   end
-  
+
 end#end of function
 
 def get_english_meaning(filePath, )
