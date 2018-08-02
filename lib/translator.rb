@@ -18,11 +18,10 @@ def load_library(filePath)
 end
 
 def get_japanese_emoticon(filePath, japanese_emoticon)
-  load_library(filePath)
-  if load_library(filePath)['get_emoticon'][japanese_emoticon]
-    return load_library(filePath)['get_emoticon'][japanese_emoticon]
+  emoticons_hash = load_library(filePath)
+  if emoticons_hash['get_emoticon'][japanese_emoticon]
+    return emoticons_hash['get_emoticon'][japanese_emoticon]
   else
-    load_library(filePath)
     return 'Sorry, that emoticon was not found'
   end
 
