@@ -4,6 +4,7 @@ require 'pry'
 def load_library(filePath)
   new_hash = {}
   yaml_file = YAML.load_file(filePath)
+  new_hash
 end
 
 def get_japanese_emoticon
