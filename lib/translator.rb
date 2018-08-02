@@ -17,7 +17,7 @@ def load_library(filePath)
   new_hash
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(filePath, emoticon)
   # code goes here
 end
 
