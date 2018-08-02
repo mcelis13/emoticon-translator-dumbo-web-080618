@@ -30,5 +30,6 @@ end#end of function
 
 def get_english_meaning(filePath, japanese_emoticon)
   emoticons_hash = load_library(filePath)
-  binding.pry
+  if emoticons_hash['get_meaning'][japanese_emoticon]
+    return emoticons_hash['get_meaning'][japanese_emoticon]
 end
