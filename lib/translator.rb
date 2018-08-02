@@ -2,6 +2,7 @@
 
 def load_library(filePath)
   new_hash = {}
+  binding.pry
   new_hash
 end
 
