@@ -6,8 +6,9 @@ def load_library(filePath)
   yaml_file = YAML.load_file(filePath)
 
   yaml_file.each do |key, emoticons|
+    binding.pry
   end
-  
+
   new_hash
 end
 
