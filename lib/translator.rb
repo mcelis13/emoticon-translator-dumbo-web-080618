@@ -1,3 +1,4 @@
+YAML."/lib/emoticons.yml"
 require 'pry'
 require 'yalm'
 require 'emoticons.yml'
