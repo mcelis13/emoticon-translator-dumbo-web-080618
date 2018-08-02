@@ -1,4 +1,4 @@
-YAML."/lib/emoticons.yml"
+YAML.load_file"/lib/emoticons.yml"
 require 'pry'
 require 'yalm'
 require 'emoticons.yml'
