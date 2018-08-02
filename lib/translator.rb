@@ -6,11 +6,14 @@ def load_library(filePath)
   yaml_file = YAML.load_file(filePath)
 
   yaml_file.each do |key, emoticons|
-    if new_hash.has_key?(key) == false
-      new_hash['get_meaning'] = {emoticons[1] => key}
-      new_hash['get_emoticon'] = {emoticons[0] => emoticons[1]}
+      emoticons.each do |english_emoticon, japanese_emoticon|
+        if new_hash['get_emoticon'].has_value?(english_emoticon) == false
+          new_hash['get_meaning'] = {emoticons[1] => key}
+          new_hash['get_emoticon'] = {emoticons[0] => emoticons[1]}
+        end
+      end
       binding.pry
-    end
+
   end
 
   new_hash
