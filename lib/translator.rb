@@ -15,6 +15,7 @@ def load_library(filePath)
   end#end of yaml_file
 
   new_hash
+  binding.pry
 end
 
 def get_japanese_emoticon
