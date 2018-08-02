@@ -4,6 +4,10 @@ require 'pry'
 def load_library(filePath)
   new_hash = { 'get_meaning' => {}, 'get_emoticon' => {}}
   yaml_file = YAML.load_file(filePath)
+
+  yaml_file.each do |key, emoticons|
+  end
+  
   new_hash
 end
 
