@@ -1,5 +1,6 @@
 require 'pry'
-require 'emoticons.yml'
+require 'yalm'
+
 def load_library(filePath)
   new_hash = {}
   binding.pry
