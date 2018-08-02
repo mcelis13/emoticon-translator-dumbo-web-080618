@@ -19,6 +19,7 @@ end
 
 def get_japanese_emoticon(filePath, japanese_emoticon)
   emoticons_hash = load_library(filePath)
+  
   if emoticons_hash['get_emoticon'][japanese_emoticon]
     return emoticons_hash['get_emoticon'][japanese_emoticon]
   else
